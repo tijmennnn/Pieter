@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{NAAM}</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #0e0e0e;
+      --white: #ffffff;
+      --gold: #d4af37;
+      --gray: #aaa;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--black);
+      color: var(--white);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 20px;
+    }
+
+    header h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 3.5rem;
+      color: var(--gold);
+      letter-spacing: 1px;
+    }
+
+    .quote-block {
+      border-left: 4px solid var(--gold);
+      padding: 30px 20px;
+      margin: 60px 0;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .quote-block p {
+      font-style: italic;
+      font-size: 1.3rem;
+      color: #ddd;
+      margin-bottom: 10px;
+    }
+
+    .quote-block span {
+      display: block;
+      font-size: 0.95rem;
+      color: var(--gray);
+      margin-top: 10px;
+      text-align: right;
+    }
+
+    .collage {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 60px;
+    }
+
+    .collage img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      .quote-block p {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="icon">
+        <!-- Jouw originele SVG inline, in goudkleur -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#d4af37">
+          <path d="M19 3H5a1 1 0 0 0-1 1v2a5.001 5.001 0 0 0 4 4.9V19H6a1 1 0 1 0 0 2h12a1 1 0 1 0 0-2h-2v-8.1A5.001 5.001 0 0 0 20 6V4a1 1 0 0 0-1-1Zm-1 3a3 3 0 0 1-6 0H6V5h6a3 3 0 0 1 6 0v1Z"/>
+        </svg>
+      </div>
+      <h1>{NAAM}</h1>
+    </header>
+
+    <div class="quote-block">
+      <p>"{HIER KOMT EEN PERSOONLIJKE QUOTE VAN IEMAND OVER DE HERINNERING, EMOTIE OF MOMENT}"</p>
+      <span>— {NAAM VAN DEGENE DIE DE QUOTE GEEFT}</span>
+    </div>
+
+    <div class="collage">
+      <img src="Pieter-Groepsfotoblauw.jpeg" alt="Groepsfoto blauw">
+      <img src="Pieter-Groepsfotooranje.jpeg" alt="Groepsfoto oranje">
+      <img src="Pieter-Groepsfotorood.jpeg" alt="Groepsfoto rood">
+      <img src="Pieter-Oudefotosneeuw.jpeg" alt="Oude sneeuwfoto">
+    </div>
+  </div>
+</body>
+</html>
